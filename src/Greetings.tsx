@@ -40,7 +40,7 @@ function Greetings(props: { changeText: (text: string) => void; }) {
         onKeyDown={handleKeyDown}
         style={inputStyle}
       />
-      <button className="btn" id="clickButton" onClick={clickButton} style={buttonStyle}>
+      <button className="btn btn-primary" id="clickButton" onClick={clickButton} style={buttonStyle}>
         
         Click here
       </button>

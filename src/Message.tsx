@@ -20,9 +20,14 @@ function Message(props: { name: string; }) {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold underline"
-       style={greetingStyle}>Hello {name}!</h1>
-      <button className="btn" onClick={changeColor}>Change Color</button>
+      <div className="flex w-full">
+      <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
+        <h1 className="text-3xl font-bold"  style={greetingStyle}>Hello {name}</h1>
+        </div>
+      <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">WelcomeBack</div>
+    </div>
+
+      <button className="btn btn-primary bg-white" onClick={changeColor}>Change Color</button>
     </div>
   )
 }
